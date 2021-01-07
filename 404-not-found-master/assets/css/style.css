@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Space Mono", monospace;
+  padding: 1rem;
+}
+header {
+  font-family: "Inconsolata", monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.08em;
+}
+main {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  margin: 3rem 1rem;
+  height: 35vh;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 71px;
+  letter-spacing: -0.035em;
+  color: #333333;
+}
+p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 27px;
+  padding: 2rem 0 0 0;
+  letter-spacing: -0.035em;
+  color: #4f4f4f;
+}
+button {
+  padding: 1.125rem 2.5rem;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: #333333;
+  font-family: Space Mono;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  margin: 3.5rem 0;
+}
+button:active,
+button:focus {
+  outline: none;
+}
+footer {
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+}
+@media all and (min-width: 768px) {
+    body {
+        padding: 2rem 4rem;
+      }
+      img {
+        margin: 0 7rem 0 0;
+        height: 60vh;
+      }
+  main {
+      padding: 5rem 0;
+    flex-direction: row;
+  }
+  h1{
+    font-size: 4rem;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+  }
+  p{
+    /* padding: 0; */
+    font-size: 1.5rem;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+  }
+  button{
+      margin: 3.5rem 0 1rem;
+  }
+}
