@@ -9,6 +9,7 @@ function openNav() {
     var test = menu.style.opacity
     if (test == 0) {
         menu.style.opacity = '1';
+        menu.style.zIndex = '998';
         spanOne.style.transform = 'rotate(45deg)';
         spanTwo.style.transform = 'rotate(-45deg)';
         spanThree.style.transform = 'translateX(-100%)';
