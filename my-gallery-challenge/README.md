@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://shubham-devchallenges.netlify.app/my-team-challenge/">
+    <a href="https://shubham-devchallenges.netlify.app/my-gallery-challenge/">
       Demo
     </a>
     <span> | </span>
