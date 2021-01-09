@@ -34,11 +34,11 @@ header p {
   justify-content: space-evenly;
 }
 .analytics div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.5rem;
   background: #e5e5e5;
   border-radius: 12px;
   padding: 0.7rem 1rem;
@@ -48,14 +48,50 @@ h3 {
   line-height: 15px;
   color: #4e5150;
 }
-h3:nth-child(2n){
-    color: #BDBDBD;
+h3:nth-child(2n) {
+  color: #bdbdbd;
 }
-main{
+main {
   column-count: 2;
 }
-main img{
-    /* margin: 0 0 .2rem; */
-    border-radius: 12px;
-    width: 100%;
+main img {
+  margin: 0 0 0.5rem;
+  border-radius: 12px;
+  width: 100%;
+}
+footer {
+  text-align: center;
+  color: #a9a9a9;
+}
+@media all and (min-width: 768px) {
+  body{
+    padding: 2rem 4rem 0rem;
+  }
+  header > img {
+    height: 150px;
+  }
+  header h2 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  header p {
+    margin: 0 0 1rem;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .analytics div {
+    padding: 0.5rem 0;
+  }
+  h3{
+    padding: 0 1rem;
+  }
+}
+@media all and (min-width:991px){
+  body{
+    padding: 2rem 8rem 1rem;
+  }
 }
