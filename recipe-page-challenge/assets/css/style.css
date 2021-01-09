@@ -1,4 +1,152 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "montserrat", sans-serif;
+  padding: 2rem 8rem;
+  color: #333333;
+}
+.main-img {
+  height: 65vh;
+  width: 100%;
+  display: block;
+  margin: 2rem 0 3rem;
+}
+header h1 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 64px;
+}
+header span {
+  display: block;
+  height: 8px;
+  margin: 0 0.5rem 0 0;
+}
+header p {
+  display: flex;
+  width: 47vw;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4f4f4f;
+  margin: 1rem 0;
+}
+.d-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.content {
+  width: 55%;
+}
+h2 {
+  margin: 2rem 0;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+}
+h2:nth-child(1),
+h3:nth-child(1) {
+  margin: 0 0 2rem;
+}
+h3 {
+  margin: 2rem 0;
+  font-family: Playfair Display;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+input[type="checkbox"] {
+  margin: 0 1rem 0 0;
+  border: 1px solid #000000;
+}
+.group {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  margin: 0.5rem 0;
+}
+label {
+  font-size: 16px;
+  line-height: 25px;
+}
+li {
+  font-size: 16px;
+  line-height: 25px;
+}
+ul {
+  list-style: none;
+  counter-reset: number;
+}
+.wrap {
+  display: flex;
+  margin: 1rem 0;
+}
+.wrap span::before {
+  counter-increment: number;
+  content: counter(number);
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  background: #f2994a;
+  border-radius: 6px;
+  display: block;
+  height: 36px;
+  width: 36px;
+  text-align: center;
+  margin: 0 1rem 0 0;
+}
+.muted {
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  color: #bdbdbd;
+  margin: 2rem 0;
+}
+.menu {
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  height: 350px;
+  box-sizing: border-box;
+  padding: 3rem;
+}
+.group span {
+  font-size: 2.5rem;
+}
+.active {
+  color: #f2994a;
+}
+.wrap2{
+  margin: .5rem 0.5rem 0;
+}
+.menu .group{
+  margin: 1.5rem 0;
+}
+.wrap2 p {
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #bdbdbd;
+}
+.wrap2 h4{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+footer {
+  text-align: center;
+  color: #a9a9a9;
 }
