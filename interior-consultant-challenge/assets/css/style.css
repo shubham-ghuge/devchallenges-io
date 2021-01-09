@@ -14,6 +14,7 @@ a {
 }
 nav {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .wrap {
@@ -23,7 +24,6 @@ nav {
 }
 .menu {
   position: absolute;
-  /* z-index: 998; */
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -34,7 +34,6 @@ nav {
   width: 95vw;
   transition: all 0.5s;
   opacity: 0;
-  /* display: none; */
 }
 ul li {
   margin: 1rem 0;
@@ -47,7 +46,7 @@ ul li {
   line-height: 22px;
 }
 .active {
-  font-weight: bold;
+  font-weight: 700;
 }
 .logo {
   font-family: "Crimson Pro";
@@ -56,7 +55,12 @@ ul li {
   line-height: 16px;
   border: 1px solid #fff;
   padding: 0.5rem;
+  background-color: transparent;
   text-transform: uppercase;
+}
+.logo:hover {
+  background-color: #fff;
+  color: #000000;
 }
 .mobile-btn {
   position: relative;
@@ -86,6 +90,7 @@ main {
   flex-direction: column;
   position: relative;
   z-index: 1;
+  margin: 0;
 }
 h1 {
   font-family: Lora;
@@ -140,7 +145,7 @@ main a {
   object-fit: contain;
 }
 .info-card {
-    position: absolute;
+  position: absolute;
   width: 70vw;
   bottom: -20%;
   right: 0;
@@ -148,8 +153,7 @@ main a {
   margin: auto;
   background-color: #181719;
   padding: 0.5rem 1rem 1rem;
-  box-shadow: 0px 4px 4px 0px #000000 25%;
-
+  box-shadow: 0px 4px 4px 0px #00000025;
 }
 .info-card > div {
   display: flex;
@@ -186,17 +190,83 @@ main a {
   width: 50vw;
 }
 footer {
-    margin: 7rem 0 0;
-    font-family: montserrat;
-    text-align: center;
-    color: #a9a9a9;
+  margin: 7rem 0 0;
+  font-family: montserrat;
+  text-align: center;
+  color: #a9a9a9;
 }
-footer::before{
-    content: '';
-    display: block;
-    margin: 0rem auto .5rem;
-    height: 2px;
-    width: 70vw;
-    border-radius: 20px;
-    background-color: #a9a9a9;
+footer::before {
+  content: "";
+  display: block;
+  margin: 0rem auto 0.5rem;
+  height: 2px;
+  width: 70vw;
+  border-radius: 20px;
+  background-color: #a9a9a9;
+}
+@media all and (min-width: 768px) {
+  body {
+    overflow-x: hidden;
+    padding: 0.8rem 3rem;
+  }
+  nav {
+    flex-wrap: nowrap;
+  }
+  .mobile-btn {
+    display: none;
+  }
+  .wrap {
+    width: a;
+  }
+  .menu {
+    position: relative;
+    height: 100%;
+    width: auto;
+    opacity: 1;
+    flex-direction: row;
+  }
+  ul li {
+    margin: 0.2rem 0 0 3rem;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    margin: 4rem 0 0;
+  }
+  h1 {
+    font-size: 48px;
+    line-height: 61px;
+  }
+  main p {
+    width: 30vw;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  main a {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .arrow::after {
+    top: -200%;
+  }
+  .card {
+    margin: 2rem 0 0 auto;
+  }
+  .card > img {
+    height: 65vh;
+  }
+  .info-card {
+    width: 23vw;
+    margin: 0 1.3rem 0 auto;
+    padding: 0.5rem 1rem 1rem;
+  }
+  .info-card h2 {
+    width: 70%;
+  }
+}
+@media all and (min-width: 1300px) {
+  .info-card {
+    bottom: -10%;
+    margin: 0 3rem 0 auto;
+  }
 }
