@@ -189,12 +189,23 @@ select {
   line-height: 20px;
   padding: 1rem 2rem;
   border-radius: 12px;
+  transition: all .5s;
+}
+.cta:hover{
+  border:1px solid #f2994a;
+  background-color: #fff;
+  color: #f2994a;
 }
 h3:nth-child(2) {
   margin: 0;
 }
 input[type="checkbox"] {
   width: auto;
+}
+footer{
+  margin: 2rem 0 .5rem;
+  text-align: center;
+  color: #A9A9A9;
 }
 @media all and (min-width: 768px) {
   body {
