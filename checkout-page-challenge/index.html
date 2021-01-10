@@ -1,11 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Checkout Page Challenge</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Page Challenge</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet"> 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+    <h1>Checkout</h1>
+    <main>
+      <section class="order">
+        <div class="wrap">
+          <div class="item">
+            <img src="./assets/img/photo1.png" alt="bag">
+            <div class="">
+              <h4>Vintage Backbag</h4>
+              <p class="price">$54.99 <span><del>$94.99</del></span></p>
+              <div class="quantity">
+                <button id="inc">+</button>
+                <span id="change">1</span>
+                <button id="dec">-</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./assets/img/photo2.png" alt="shoes">
+            <div class="">
+              <h4>Levi Shoes</h4>
+              <p class="price">$74.99 <span><del>$124.99</del></span></p>
+              <div class="quantity">
+                <button id="inc2">+</button>
+                <span id="change2">1</span>
+                <button id="dec2">-</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="total">
+          <h2>Shipping</h2><h2>$19</h2>
+        </div>
+        <div class="total">
+          <h2>total</h2><h2>$148.98</h2>
+        </div>
+      </section>
+      <section class="contact">
+        <h3>Contact infomation</h3>
+        <form action="">
+          <div class="group">
+            <label for="email">e-mail</label>
+            <div class="add-on">
+              <span class="material-icons">
+                email
+              </span>
+              <input type="text" placeholder="Enter your email...">
+            </div>
+          </div>
+
+          <div class="group">
+            <label for="email">Phone</label>
+            <div class="add-on">
+              <span class="material-icons">
+                call
+              </span>
+              <input type="text" placeholder="Enter your phone...">
+            </div>
+          </div>
+        <h3>Shipping address</h3>
+        <div class="group">
+          <label for="email">Full name</label>
+          <div class="add-on">
+            <span class="material-icons">
+              account_circle
+            </span>
+            <input type="text" placeholder="Enter your name..." value="Rodney Cotton">
+          </div>
+        </div>
+
+        <div class="group">
+          <label for="email">address</label>
+          <div class="add-on">
+            <span class="material-icons">
+              home
+            </span>
+            <input type="text" placeholder="Your address..">
+          </div>
+        </div>
+
+        <div class="group">
+          <label for="email">city</label>
+          <div class="add-on">
+            <span class="material-icons">
+              location_city
+            </span>
+            <input type="text" placeholder="Your city..">
+          </div>
+        </div>
+        <div class="wrap2">
+          <div class="group extra">
+            <label for="email">country</label>
+            <div class="add-on">
+              <span class="material-icons">
+                location_city
+              </span>
+              <select name="" id="">
+                <option value="india" selected>Your contry..</option>
+                <option value="india">india</option>
+                <option value="india">USA</option>
+                <option value="india">UK</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="group">
+            <label for="email">postal code</label>
+            <div class="add-on">
+              <span class="material-icons">
+                markunread_mailbox
+              </span>
+              <input type="text" placeholder="Your postal code..">
+            </div>
+          </div>
+        </div>
+        <div class="label-wrap">
+          <input type="checkbox" id="checkthis"> <span>Save this information for next time</span>
+        </div>
+        <button class="cta">Continue</button>
+        </form>
+      </section>
+    </main>
+    <script>
+      var incBtn=document.getElementById('inc')
+      var incTwoBtn=document.getElementById('inc2')
+      var decBtn=document.getElementById('dec')
+      var decTwoBtn=document.getElementById('dec2')
+      var changeTxt=document.getElementById('change').innerText
+      var changeTwoTxt=document.getElementById('change2').innerText
+      incBtn.addEventListener('click',function(){incrementThis(change)})
+      incTwoBtn.addEventListener('click',function(){incrementThis(change2)})
+      decBtn.addEventListener('click',function(){decrementThis(change)})
+      decTwoBtn.addEventListener('click',function(){decrementThis(change2)})
+      var counter=1;
+      function incrementThis(e){
+        counter>10?counter=1:counter++;
+        var counterw=document.createTextNode(counter)
+        e.innerText=counterw.data
+      }
+      function decrementThis(e){
+        counter<1?counter=1:counter--;
+        var counterw=document.createTextNode(counter)
+        e.innerText=counterw.data
+      }
+    </script>
+  </body>
 </html>
