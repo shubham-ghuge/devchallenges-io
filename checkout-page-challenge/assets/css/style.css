@@ -73,7 +73,8 @@ main {
   border: 1px solid #828282;
   box-sizing: border-box;
   border-radius: 12px;
-  padding: 1rem 0.5rem;
+  padding: .8rem 0.5rem;
+  width: 130px;
   display: flex;
   justify-content: space-between;
 }
