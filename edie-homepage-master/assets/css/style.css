@@ -189,8 +189,8 @@ input::-moz-placeholder {
 }
 .card {
   position: relative;
-  padding: 0 2rem;
-  margin: 2rem auto;
+  padding: 2rem;
+  margin: auto;
 }
 .icon {
   height: 60px;
@@ -358,6 +358,9 @@ footer .nav-link{
   flex-direction: column;
   margin: 2rem;
 }
+.site .logo{
+  margin: 0;
+}
 .icon-wrap{
   display: flex;
 }
@@ -365,6 +368,7 @@ footer .nav-link{
   display: block;
   height: 30px;
   width: 30px;
+  object-fit: contain;
   margin: .5rem .5rem .5rem 0;
 }
 footer h4{
