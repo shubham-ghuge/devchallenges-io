@@ -1,11 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eddie Home page</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eddie Home page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h2><a href="#" class="logo">Edie</a></h2>
+        <button onclick="openNav()" class="nav-btn" id="nav-btn">
+          <span id="two"></span>
+          <span id="one"></span>
+          <span id="three"></span>
+        </button>
+        <ul class="menu" id="menu">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#our_works">Our Works</a></li>
+          <li><a class="nav-link" href="#clients">Clients</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <h1 class="heading-1">
+          <span>Unhappy with your website?</span><br/>We create beautiful<br/> and fast
+          web services
+        </h1>
+        <img src="./assets/img/heroImage.jpg" alt="team meeting" />
+        <h2 class="heading-1">Story, emotion<br/> and purpose</h2>
+        <p class="small-text">
+          We help transform your ideas into real world applications that will
+          outperform your toughest competition and help you achieve your
+          strategic goals in short period of time.
+        </p>
+        <div class="input-wrapper">
+          <p>Want us to contact you?</p>
+          <div class="input">
+            <input type="text" placeholder="Email" />
+            <button>Join</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <h2 class="heading-1">We offer high<br/> demand services</h2>
+        <div class="row">
+          <div class="card">
+            <div class="icon">
+              <span class="material-icons"> create </span>
+            </div>
+            <div class="card-header">UI/UX Design</div>
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id qis turpis.
+            </div>
+            <button class="cta">Get started</button>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <span class="material-icons"> code </span>
+            </div>
+            <div class="card-header">Front End</div>
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id qis turpis.
+            </div>
+            <button class="cta">Get started</button>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <span class="material-icons"> storage </span>
+            </div>
+            <div class="card-header">Back End</div>
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id qis turpis.
+            </div>
+            <button class="cta">Get started</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="our_works">
+        <h2 class="heading-1">Good design means<br/> good business</h2>
+        <div class="row">
+          <div class="app">
+            <img
+              src="./assets/img/smarthome.jpg"
+              alt="smart home application interface"
+            />
+            <p>Full stack application</p>
+            <h3>Smart home dashboard</h3>
+          </div>
+          <div class="app">
+            <img
+              src="./assets/img/onboard.png"
+              alt="onboard application interface"
+            />
+            <p>ui/ux design</p>
+            <h3>Onboard application</h3>
+          </div>
+          <div class="app">
+            <img
+              src="./assets/img/booking.png"
+              alt="booking application interface"
+            />
+            <p>mobile application</p>
+            <h3>Booking system</h3>
+          </div>
+          <div class="app">
+            <img
+              src="./assets/img/juice-product.png"
+              alt="juice product application interface"
+            />
+            <p>Front end application</p>
+            <h3>Juice product homepage</h3>
+          </div>
+          <a href="#">see more <span class="material-icons"> arrow_right_alt </span></a>
+        </div>
+      </section>
+      <section id="clients">
+        <div class="content">
+          <p>Meet the team</p>
+          <h2>We are chilled and a laidback team</h2>
+          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+        </div>
+        <div class="img-grid">
+          <img src="./assets/img/person3.png" alt="team person">
+          <img src="./assets/img/person1.png" alt="team person">
+          <img src="./assets/img/person2.png" alt="team person">
+        </div>
+      </section>
+      <section id="contact">
+        <div class="quote">“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”</div>
+        <div class="user">
+          <img src="./assets/img/person4.png" alt="person">
+          <div class="d-flex">
+            <h3>Carlos Tran</h3>
+            <p>The Decorate Gatsby</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap">
+        <div class="links">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#our_works">Our Works</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="site">
+          <h2 class="logo">Edie</h2>
+          <div class="icon-wrap">
+            <img src="./assets/img/instagram.svg" alt="instagram">
+            <img src="./assets/img/linkedin.svg" alt="linkedin">
+            <img src="./assets/img/twitter.svg" alt="twitter">
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <p>Want us to contact you?</p>
+          <div class="input">
+            <input type="text" placeholder="Email" />
+            <button>Join</button>
+          </div>
+        </div>
+      </div>
+      <h4>shubham ghuge @DevChallenges.io</h4>
+    </footer>
+    <script>
+      function openNav(){
+        var btn=document.querySelector('#nav-btn')
+        var test2=document.querySelector('.nav-btn span')
+        var firstSpan=document.getElementById('one');
+        var secondSpan=document.getElementById('two');
+        var thirdSpan=document.getElementById('three');
+        var menu=document.getElementById('menu')
+        var test=menu.style.display;
+        console.log(test)
+        if(test=='' || test=='none'){
+          menu.style.display="block";
+          btn.style.transform="translateX(10%)";
+          secondSpan.style.margin="0";
+          secondSpan.style.transform="translateY(100%)";
+          secondSpan.style.opacity="0";
+          firstSpan.style.transform="rotate(45deg)";
+          firstSpan.style.transformOrigin="45% 120%";
+          firstSpan.style.margin="0";
+          firstSpan.style.width="20px";
+          firstSpan.style.backgroundColor="#fff";
+          thirdSpan.style.margin="0";
+          thirdSpan.style.width="20px";
+          thirdSpan.style.backgroundColor="#fff";
+          thirdSpan.style.transform="rotate(-45deg)";
+        }else{
+          menu.style.display="none";
+          btn.style.transform="translateX(0%)";
+          secondSpan.style.margin="0 0.2rem .3rem 0";
+          secondSpan.style.transform="translateY(0%)";
+          secondSpan.style.opacity="1";
+          firstSpan.style.transform="rotate(0deg)";
+          firstSpan.style.transformOrigin="45% 120%";
+          firstSpan.style.margin="0 0.2rem .3rem 0";
+          firstSpan.style.width="30px";
+          firstSpan.style.backgroundColor="#000";
+          thirdSpan.style.margin="0 0.2rem .3rem 0";
+          thirdSpan.style.width="30px";
+          thirdSpan.style.backgroundColor="#000";
+          thirdSpan.style.transform="rotate(0deg)";
+        }
+      }
+    </script>
+  </body>
 </html>
