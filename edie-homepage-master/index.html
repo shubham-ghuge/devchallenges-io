@@ -192,10 +192,10 @@
         var secondSpan=document.getElementById('two');
         var thirdSpan=document.getElementById('three');
         var menu=document.getElementById('menu')
-        var test=menu.style.display;
+        var test=menu.style.transform;
         console.log(test)
-        if(test=='' || test=='none'){
-          menu.style.display="block";
+        if(test=='' || test=='scale(0)'){
+          menu.style.transform="scale(1)";
           btn.style.transform="translateX(10%)";
           secondSpan.style.margin="0";
           secondSpan.style.transform="translateY(100%)";
@@ -210,7 +210,7 @@
           thirdSpan.style.backgroundColor="#fff";
           thirdSpan.style.transform="rotate(-45deg)";
         }else{
-          menu.style.display="none";
+          menu.style.transform="scale(0)";
           btn.style.transform="translateX(0%)";
           secondSpan.style.margin="0 0.2rem .3rem 0";
           secondSpan.style.transform="translateY(0%)";
