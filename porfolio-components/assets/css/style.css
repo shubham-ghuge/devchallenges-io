@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #f2f2f2;
+  font-family: "montserrat", sans-serif;
+}
+section {
+  margin: 2rem 0;
+}
+/* utility */
+.text-center {
+  text-align: center;
+}
+.capital {
+  text-decoration: capitalize;
+}
+.m-auto {
+  margin: auto;
+}
+.ml-auto {
+  margin-left: auto;
+}
+.img-fluid {
+  display: block;
+  width: 100%;
+}
+.heading-1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+/* components */
+.about-me {
+  border-radius: 0.7rem;
+  position: relative;
+  background-color: #fff;
+  padding: 1rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.about-me img {
+  height: 300px;
+  object-fit: cover;
+  object-position: 100% 20%;
+  border-radius: 0.6rem;
+}
+.user-info {
+  padding: 0;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+.who-am-i {
+  margin: 1rem 0;
+}
+.who-am-i h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #4f4f4f;
+  margin: 0;
+}
+.who-am-i p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #828282;
+}
+.contact-info {
+  margin: 1rem 0;
+}
+.contact-info span {
+  color: #4f4f4f;
+  margin: 0 0.8rem 0 0;
+  vertical-align: middle;
+}
+.contact-info h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4f4f4f;
+  margin: 0 0 0.5rem;
+}
+.intro {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #828282;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin: 0;
+}
+/* media queries */
+@media all and (min-width: 500px) {
+  .about-me {
+    margin: 1rem 5rem;
+  }
+}
+@media all and (min-width: 768px) {
+  .about-me {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 1rem;
+  }
+  .about-me img {
+    height: 250px;
+    width: 350px;
+  }
+  .who-am-i h3 {
+    margin: 0 0 0.5rem;
+  }
+  .user-info {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 0 0 1rem;
+  }
+  .intro {
+    display: block;
+    margin: 1.5rem 0 0;
+    padding: 0 0 0 1rem;
+  }
+}
+@media all and (min-width: 991px) {
+  .about-me {
+    margin: 2rem 6rem;
+  }
+  .about-me img{
+    height: 300px;
+  }
+  .user-info{
+    margin: 0 1rem;
+  }
+  .intro{
+    margin: 2rem 1rem 0;
+    padding: 0 5rem 0 1rem;
+  }
+}
