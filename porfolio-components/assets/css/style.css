@@ -553,6 +553,10 @@ progress[value]::-moz-progress-bar {
   line-height: 29px;
   color: #4f4f4f;
 }
+.pagination-2 .tabs{
+  display: flex;
+  list-style: none;
+}
 .btns button {
   margin: 1rem 1rem 0 0;
   font-weight: 500;
