@@ -25,6 +25,9 @@ input:focus {
 .text-center {
   text-align: center;
 }
+.mt-1{
+  margin: 1rem 0 0;
+}
 .link {
   text-decoration: none;
   color: #5c94e1;
@@ -578,7 +581,7 @@ progress[value]::-moz-progress-bar {
   color: #fff;
   border: none;
 }
-.active:hover{
+.btns .active:hover{
   color: #fff!important;
 }
 .pagination-3{

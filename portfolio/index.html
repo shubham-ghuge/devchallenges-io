@@ -1,19 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shubham Ghuge</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../porfolio-components/assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
-      rel="stylesheet">
-</head>
-<body>
-    
-</body>
+    <!-- <link rel="stylesheet" href="../porfolio-components/assets/css/style.css"> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/portfolio.css" />
+  </head>
+  <body>
+    <section id="about">
+      <div class="about-me shadow-b">
+          <img src="./assets/img/DSC_0494 [photoutils.com](1).jpg" class="img-fluid shadow" alt="male portrait">
+          <div class="">
+          <div class="user-info">
+            <div class="who-am-i">
+                <h3>Shubham Ghuge</h3>
+                <p>Computer Engineering Undergrad</p>
+            </div>
+            <div class="contact-info">
+                <h4><span class="material-icons">email</span><a href="mailto:shubhamghuge34@gmail.com">user@email.com</a></h4>
+                <h4><span class="material-icons">call</span> <a href="tel:+911010101010">(+91) 11111 00000</a></h4>
+            </div>
+          </div>
+          <p class="intro">Self-motivated developer, who is willing to learn and create outstanding UI applications. <br><br>
+            Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie. </p>
+          </div>
+      </div>
+    </section>
+    <div class="grids">
+      <section id="skills">
+        <div class="skills shadow-b">
+          <h2 class="upper">Front End</h2>
+          <div class="skills-column">
+            <p class="capital">HTML <span><progress min="0" max="100" value="60"></progress></span></p>
+            <p class="capital">CSS <span><progress min="0" max="100" value="90"></progress></span></p>
+            <p class="capital">react <span><progress min="0" max="100" value="60"></progress></span></p>
+            <p class="capital">Javascript <span><progress min="0" max="100" value="80"></progress></span></p>
+            <p class="capital">React Native <span><progress min="0" max="100" value="80"></progress></span></p>
+            <p class="capital">Vue <span><progress min="0" max="100" value="95"></progress></span></p>
+          </div>
+        </div>
+      </section>
+      <section id="blogs">
+        <div class="blogs shadow-b">
+          <p class="muted">Blog</p>
+          <h2 class="blog-title">How to <br> organize your <br> CSS</h2>
+          <img src="../porfolio-components/assets/img/photo1.png" class="img-fluid" alt="blog-thumbnail">
+          <div class="blog-desc"><p>In this article I tell the story about Proin eu justo sit amet lacus bibendum tincidunt.</p> <p> Vivamus non volutpat nisl, a luctus mi.  
+            Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.</p></div>
+          <a href="#" class="link">dev.to</a>
+        </div>
+      </section>
+      <section id="hobbies">
+        <div class="hobbies shadow-b">
+          <h2>Hobbies/Certifcates</h2>
+          <div class="exp">
+          <div class="hobbies-card">
+            <img src="./assets/img/pexels-jeshootscom-1040157.jpg" alt="hobby">
+            <h3 class="hob-title">Photography</h3>
+            <p class="hob-desc">Quisque feugiat malesuada molestie.</p>
+          </div>
+          <div class="hobbies-card">
+            <img src="./assets/img/pexels-markus-spiske-122400.jpg" alt="hobby">
+            <h3 class="hob-title">Chess</h3>
+            <p class="hob-desc">Quisque feugiat malesuada molestie.</p>
+          </div>
+          </div>
+        </div>
+      </section>
+      <section id="experience" class=" shadow-b">
+        <h2 class="capital">experience</h2>
+        <div class="exp">
+          <div class="exp-card">
+            <img src="./assets/img/apple-touch-icon.png" class="exp-icon" alt="company icon">
+            <div class="exp-content">
+              <p class="exp-muted">Feb 2017 - Current</p>
+              <h3 class="exp-title">Front-end developer</h3>
+              <p class="exp-body">
+                Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.
+              </p>
+            </div>
+          </div>
+          <div class="exp-card">
+            <img src="./assets/img/projectDealers.jpg" class="exp-icon" alt="company icon">
+            <div class="exp-content">
+              <p class="exp-muted">Feb 2017 - Current</p>
+              <h3 class="exp-title">Front-end developer</h3>
+              <p class="exp-body">
+                Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section id="projects">
+      <div class="pagination-2">
+        <h3>Projects (3)</h3>
+        <div class="btns">
+          <div class="tabs" id="tab-btns">
+            <a href="#react" class="pagination-btns">React</a>
+            <a href="#vue" class="pagination-btns">Vue</a>
+            <a href="#responsive" class="pagination-btns active">Responsive</a>
+          </div>
+        </div>
+      </div>
+      <ul class="tabs-content mt-1">
+        <li id="react" class="active">
+          <div class="project">
+            <img
+              src="./assets/img/projects/react web app.png"
+              class="img-fluid"
+              alt="thumbnail"
+            />
+            <div class="content">
+              <p class="project-tags">#HTML #CSS #responsive</p>
+              <h2 class="project-title">React App</h2>
+              <p class="project-desc">
+                In this project, I work with HTML and CSS to create a responsive
+                page . The design is from devchallenge.io. Donec aliquam est
+                dui, vel vestibulum diam sollicitudin id. Quisque feugiat
+                malesuada molestie.
+              </p>
+              <div class="project-btns">
+                <button class="cta-1">Demo</button>
+                <button class="cta-2">Code</button>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <img
+              src="./assets/img/projects/translator app.png"
+              class="img-fluid"
+              alt="thumbnail"
+            />
+            <div class="content">
+              <p class="project-tags">#HTML #CSS #responsive</p>
+              <h2 class="project-title">Translator App</h2>
+              <p class="project-desc">
+                In this project, I work with HTML and CSS to create a responsive
+                page . The design is from devchallenge.io. Donec aliquam est
+                dui, vel vestibulum diam sollicitudin id. Quisque feugiat
+                malesuada molestie.
+              </p>
+              <div class="project-btns">
+                <button class="cta-1">Demo</button>
+                <button class="cta-2">Code</button>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <img
+              src="./assets/img/projects/minionApp.png"
+              class="img-fluid"
+              alt="thumbnail"
+            />
+            <div class="content">
+              <p class="project-tags">#HTML #CSS #responsive</p>
+              <h2 class="project-title">Minion translator</h2>
+              <p class="project-desc">
+                In this project, I work with HTML and CSS to create a responsive
+                page . The design is from devchallenge.io. Donec aliquam est
+                dui, vel vestibulum diam sollicitudin id. Quisque feugiat
+                malesuada molestie.
+              </p>
+              <div class="project-btns">
+                <button class="cta-1">Demo</button>
+                <button class="cta-2">Code</button>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li id="vue">
+          <div class="project">
+            <img
+              src="./assets/img/photo1.png"
+              class="img-fluid"
+              alt="thumbnail"
+            />
+            <div class="content">
+              <p class="project-tags">#HTML #CSS #responsive</p>
+              <h2 class="project-title">2My Gallery</h2>
+              <p class="project-desc">
+                In this project, I work with HTML and CSS to create a responsive
+                page . The design is from devchallenge.io. Donec aliquam est
+                dui, vel vestibulum diam sollicitudin id. Quisque feugiat
+                malesuada molestie.
+              </p>
+              <div class="project-btns">
+                <button class="cta-1">Demo</button>
+                <button class="cta-2">Code</button>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <img
+              src="./assets/img/photo1.png"
+              class="img-fluid"
+              alt="thumbnail"
+            />
+            <div class="content">
+              <p class="project-tags">#HTML #CSS #responsive</p>
+              <h2 class="project-title">My Gallery</h2>
+              <p class="project-desc">
+                In this project, I work with HTML and CSS to create a responsive
+                page . The design is from devchallenge.io. Donec aliquam est
+                dui, vel vestibulum diam sollicitudin id. Quisque feugiat
+                malesuada molestie.
+              </p>
+              <div class="project-btns">
+                <button class="cta-1">Demo</button>
+                <button class="cta-2">Code</button>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <img
+              src="./assets/img/photo1.png"
+              class="img-fluid"
+              alt="thumbnail"
+            />
+            <div class="content">
+              <p class="project-tags">#HTML #CSS #responsive</p>
+              <h2 class="project-title">My Gallery</h2>
+              <p class="project-desc">
+                In this project, I work with HTML and CSS to create a responsive
+                page . The design is from devchallenge.io. Donec aliquam est
+                dui, vel vestibulum diam sollicitudin id. Quisque feugiat
+                malesuada molestie.
+              </p>
+              <div class="project-btns">
+                <button class="cta-1">Demo</button>
+                <button class="cta-2">Code</button>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li id="responsive">
+          <div class="project">
+            <img
+              src="./assets/img/projects/farmers grocery.png"
+              class="img-fluid"
+              alt="thumbnail"
+            />
+            <div class="content">
+              <p class="project-tags">#HTML #CSS #responsive</p>
+              <h2 class="project-title">farmers grocery</h2>
+              <p class="project-desc">
+                In this project, I work with HTML and CSS to create a responsive
+                page . The design is from devchallenge.io. Donec aliquam est
+                dui, vel vestibulum diam sollicitudin id. Quisque feugiat
+                malesuada molestie.
+              </p>
+              <div class="project-btns">
+                <button class="cta-1">Demo</button>
+                <button class="cta-2">Code</button>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <img
+              src="./assets/img/projects/emoji app.png"
+              class="img-fluid"
+              alt="thumbnail"
+            />
+            <div class="content">
+              <p class="project-tags">#HTML #CSS #responsive</p>
+              <h2 class="project-title">Emoji interpreter</h2>
+              <p class="project-desc">
+                In this project, I work with HTML and CSS to create a responsive
+                page . The design is from devchallenge.io. Donec aliquam est
+                dui, vel vestibulum diam sollicitudin id. Quisque feugiat
+                malesuada molestie.
+              </p>
+              <div class="project-btns">
+                <button class="cta-1">Demo</button>
+                <button class="cta-2">Code</button>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <img
+              src="./assets/img/projects/cms.png"
+              class="img-fluid"
+              alt="thumbnail"
+            />
+            <div class="content">
+              <p class="project-tags">#HTML #CSS #responsive</p>
+              <h2 class="project-title">blog web app</h2>
+              <p class="project-desc">
+                In this project, I work with HTML and CSS to create a responsive
+                page . The design is from devchallenge.io. Donec aliquam est
+                dui, vel vestibulum diam sollicitudin id. Quisque feugiat
+                malesuada molestie.
+              </p>
+              <div class="project-btns">
+                <button class="cta-1">Demo</button>
+                <button class="cta-2">Code</button>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <script>
+      var header = document.getElementById("tab-btns");
+      var btns = header.getElementsByClassName("pagination-btns");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
+  </body>
 </html>
