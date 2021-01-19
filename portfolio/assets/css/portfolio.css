@@ -8,9 +8,6 @@
     overflow-x: hidden;
     font-family: "montserrat", sans-serif;
   }
-  section {
-    margin: 2rem 0;
-  }
   a{
     color: #333333;
     text-decoration: none;
@@ -78,7 +75,6 @@
   }
   /* components */
   .about-me {
-    /* width: 100%; */
     border-radius: 0.7rem;
     position: relative;
     background-color: #fff;
