@@ -1,11 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Variants</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans+JP:wght@500&family=Poppins:wght@500&family=Ubuntu+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <h1>Buttons</h1>
+      <div class="group">
+        <div class="d-flex">
+          <p class="title">&lt;Button /></p>
+          <div class="btn-default">default</div>
+        </div>
+        <div class="d-flex">
+          <p class="title-muted">&:hover, &:focus</p>
+          <div class="btn-default-hover">default</div>
+        </div>
+      </div>
+      <div class="group">
+        <div class="d-flex">
+          <p class="title">&lt;Button variant=”outline” /></p>
+          <div class="btn-outline">default</div>
+        </div>
+        <div class="d-flex">
+          <p class="title-muted">&:hover, &:focus</p>
+          <div class="btn-outline-hover">default</div>
+        </div>
+      </div>
+      <div class="group">
+        <div class="d-flex">
+          <p class="title">&lt;Button variant=”text” /></p>
+          <div class="btn-text">default</div>
+        </div>
+        <div class="d-flex">
+          <p class="title-muted">&:hover, &:focus</p>
+          <div class="btn-text-hover">default</div>
+        </div>
+      </div>
+      <div class="group">
+        <div class="d-flex">
+          <p class="title">&lt;Button disableShadow /></p>
+          <div class="btn-disable-shadow">default</div>
+        </div>
+      </div>
+      <div class="group">
+        <div class="d-flex">
+          <p class="title">&lt;Button disabled /></p>
+          <div class="btn-disabled">disabled</div>
+        </div>
+        <div class="d-flex">
+          <p class="title-muted">&lt;Button variant=”text” disabled /></p>
+          <div class="btn-disabled-hover">disabled</div>
+        </div>
+      </div>
+      <div class="group">
+        <div class="d-flex">
+          <p class="title">&lt;Button startIcon=”local_grocery_store” /></p>
+          <div class="btn-primary">
+            <span class="material-icons"> add_shopping_cart </span> default
+          </div>
+        </div>
+        <div class="d-flex">
+          <p class="title">&lt;Button endIcon=”local_grocery_store” /></p>
+          <div class="btn-primary">
+            default <span class="material-icons"> add_shopping_cart </span>
+          </div>
+        </div>
+      </div>
+      <div class="group">
+        <div class="d-flex">
+          <p class="title">&lt;Button size=”sm” /></p>
+          <div class="btn-primary-sm">default</div>
+        </div>
+        <div class="d-flex">
+          <p class="title">&lt;Button size=”md” /></p>
+          <div class="btn-primary-md">default</div>
+        </div>
+        <div class="d-flex">
+          <p class="title">&lt;Button size=”lg” /></p>
+          <div class="btn-primary-lg">default</div>
+        </div>
+      </div>
+      <div class="group">
+        <div class="d-flex">
+          <p class="title">&lt;Button color=”default” /></p>
+          <div class="btn-primary">default</div>
+        </div>
+        <div class="d-flex">
+          <p class="title">&lt;Button color=”secondary” /></p>
+          <div class="btn-secondary">secondary</div>
+        </div>
+        <div class="d-flex">
+          <p class="title">&lt;Button color=”danger” /></p>
+          <div class="btn-danger">danger</div>
+        </div>
+      </div>
+      <div class="group">
+        <div class="d-flex">
+          <p class="title-muted">&:hover, &:focus</p>
+          <div class="btn-primary-hover">default</div>
+        </div>
+        <div class="d-flex">
+          <p class="title-muted">&:hover, &:focus</p>
+          <div class="btn-secondary-hover">secondary</div>
+        </div>
+        <div class="d-flex">
+          <p class="title-muted">&:hover, &:focus</p>
+          <div class="btn-danger-hover">danger</div>
+        </div>
+      </div>
+    </main>
+    <footer>shubham ghuge @devChallenges.io</footer>
+  </body>
 </html>

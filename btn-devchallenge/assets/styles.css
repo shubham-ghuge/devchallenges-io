@@ -1,1 +1,536 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 0.5rem;
+}
+
+h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #4f4f4f;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.group {
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.d-flex {
+  margin: 1rem 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.title {
+  font-family: Ubuntu Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: #333333;
+}
+
+.title-muted {
+  font-family: Ubuntu Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: #828282;
+}
+
+.btn-default {
+  cursor: pointer;
+  color: #3f3f3f;
+  background-color: #e0e0e0;
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 0.3rem;
+  text-transform: capitalize;
+  margin: 0.5rem auto 0.5rem 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-default:hover {
+  background-color: #aeaeae;
+}
+
+.btn-default:focus {
+  background-color: #aeaeae;
+}
+
+.btn-default:active {
+  background-color: #aeaeae;
+}
+
+.btn-default-hover {
+  cursor: pointer;
+  color: #3f3f3f;
+  background-color: #aeaeae;
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 0.3rem;
+  text-transform: capitalize;
+  margin: 0.5rem auto 0.5rem 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-outline {
+  cursor: pointer;
+  color: #3d5afe;
+  background-color: #ffffff;
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 0.3rem;
+  text-transform: capitalize;
+  margin: 0.5rem auto 0.5rem 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid #3d5afe;
+}
+
+.btn-outline:hover {
+  background-color: rgba(41, 98, 255, 0.1);
+}
+
+.btn-outline:focus {
+  background-color: rgba(41, 98, 255, 0.1);
+}
+
+.btn-outline:active {
+  background-color: rgba(41, 98, 255, 0.1);
+}
+
+.btn-outline-hover {
+  cursor: pointer;
+  color: #3d5afe;
+  background-color: rgba(41, 98, 255, 0.1);
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 0.3rem;
+  text-transform: capitalize;
+  margin: 0.5rem auto 0.5rem 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid #3d5afe;
+}
+
+.btn-text {
+  cursor: pointer;
+  color: #3d5afe;
+  background-color: #ffffff;
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 0.3rem;
+  text-transform: capitalize;
+  margin: 0.5rem auto 0.5rem 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-text:hover {
+  background-color: rgba(41, 98, 255, 0.1);
+}
+
+.btn-text:focus {
+  background-color: rgba(41, 98, 255, 0.1);
+}
+
+.btn-text:active {
+  background-color: rgba(41, 98, 255, 0.1);
+}
+
+.btn-text-hover {
+  cursor: pointer;
+  color: #3d5afe;
+  background-color: rgba(41, 98, 255, 0.1);
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 0.3rem;
+  text-transform: capitalize;
+  margin: 0.5rem auto 0.5rem 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-disable-shadow {
+  cursor: pointer;
+  color: #fff;
+  background-color: #3d5afe;
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 0.3rem;
+  text-transform: capitalize;
+  margin: 0.5rem auto 0.5rem 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-disabled {
+  cursor: pointer;
+  color: #9e9e9e;
+  background-color: #e0e0e0;
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 0.3rem;
+  text-transform: capitalize;
+  margin: 0.5rem auto 0.5rem 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: not-allowed;
+}
+
+.btn-disabled:hover {
+  background-color: #ffffff;
+}
+
+.btn-disabled:focus {
+  background-color: #ffffff;
+}
+
+.btn-disabled:active {
+  background-color: #ffffff;
+}
+
+.btn-disabled-hover {
+  cursor: not-allowed;
+  cursor: pointer;
+  color: #9e9e9e;
+  background-color: #ffffff;
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 0.3rem;
+  text-transform: capitalize;
+  margin: 0.5rem auto 0.5rem 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-primary-sm {
+  cursor: pointer;
+  color: #fff;
+  background-color: #3d5afe;
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 0.3rem;
+  text-transform: capitalize;
+  margin: 0.5rem auto 0.5rem 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 0.3rem 0.5rem;
+}
+
+.btn-primary-md {
+  cursor: pointer;
+  color: #fff;
+  background-color: #3d5afe;
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 0.3rem;
+  text-transform: capitalize;
+  margin: 0.5rem auto 0.5rem 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-primary-lg {
+  cursor: pointer;
+  color: #fff;
+  background-color: #3d5afe;
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 0.3rem;
+  text-transform: capitalize;
+  margin: 0.5rem auto 0.5rem 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 0.7rem 2rem;
+}
+
+.btn-primary {
+  cursor: pointer;
+  color: #fff;
+  background-color: #3d5afe;
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 0.3rem;
+  text-transform: capitalize;
+  margin: 0.5rem auto 0.5rem 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0039cb;
+}
+
+.btn-primary:focus {
+  background-color: #0039cb;
+}
+
+.btn-primary:active {
+  background-color: #0039cb;
+}
+
+.btn-primary span {
+  vertical-align: middle;
+  font-size: 1.1rem;
+}
+
+.btn-primary-hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #0039cb;
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 0.3rem;
+  text-transform: capitalize;
+  margin: 0.5rem auto 0.5rem 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-secondary {
+  cursor: pointer;
+  color: #fff;
+  background-color: #455a64;
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 0.3rem;
+  text-transform: capitalize;
+  margin: 0.5rem auto 0.5rem 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #1c313a;
+}
+
+.btn-secondary:focus {
+  background-color: #1c313a;
+}
+
+.btn-secondary:active {
+  background-color: #1c313a;
+}
+
+.btn-secondary-hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #1c313a;
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 0.3rem;
+  text-transform: capitalize;
+  margin: 0.5rem auto 0.5rem 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-danger {
+  cursor: pointer;
+  color: #fff;
+  background-color: #d32f2f;
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 0.3rem;
+  text-transform: capitalize;
+  margin: 0.5rem auto 0.5rem 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-danger:hover {
+  background-color: #9a0007;
+}
+
+.btn-danger:focus {
+  background-color: #9a0007;
+}
+
+.btn-danger:active {
+  background-color: #9a0007;
+}
+
+.btn-danger-hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #9a0007;
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 0.3rem;
+  text-transform: capitalize;
+  margin: 0.5rem auto 0.5rem 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+footer {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #a9a9a9;
+  text-align: center;
+}
+
+@media all and (min-width: 768px) {
+  main {
+    margin: 1rem 4rem;
+  }
+}
+
+@media all and (min-width: 991px) {
+  .group {
+    margin: 1rem 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .d-flex {
+    margin: 0 auto 0 0;
+  }
+  main {
+    margin: 1rem 8rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
