@@ -296,6 +296,22 @@ input ::placeholder {
   color: #828282;
 }
 
+.input-help-text input:hover {
+  border: 1px solid #333333;
+}
+
+.input-help-text:focus-within label {
+  color: #2962ff;
+}
+
+.input-help-text:focus-within input {
+  border: 1px solid #2962ff;
+}
+
+.input-help-text:focus-within span {
+  color: #2962ff;
+}
+
 .input-help-text-danger input:hover {
   border: 1px solid #333333;
 }

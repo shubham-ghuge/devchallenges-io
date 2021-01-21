@@ -188,6 +188,15 @@ input {
   line-height: 14px;
   color: #828282;
 }
+
+.input-help-text {
+  @include active(#333333, #2962ff);
+  &:focus-within {
+    span {
+      color: #2962ff;
+    }
+  }
+}
 .input-help-text-danger {
   @include active(#333333, #d32f2f);
   &:focus-within {
