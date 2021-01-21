@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+}
+main {
+  margin: 0.5rem;
+}
+h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #4f4f4f;
+  margin: 0 0 1rem 0.5rem;
+}
+
+label {
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 17px;
+  color: #333333;
+  margin: 0 0 0.3rem;
+}
+input {
+  background-color: transparent;
+  border: none;
+  overflow: visible;
+  margin: 0 auto 0 0;
+  padding: 1rem 0 1rem 0.5rem;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 8px;
+  & :focus {
+    outline: none;
+  }
+  & ::placeholder {
+    font-family: Noto Sans JP;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #828282;
+  }
+}
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+@mixin title($color) {
+  font-family: Ubuntu Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: $color;
+  margin: 0 0 1rem;
+}
+.title {
+  word-wrap: break-word;
+  @include title(#333333);
+}
+.title-muted {
+  @include title(#828282);
+}
+.input-group,
+.input-help-text,
+.input-help-text-danger {
+  margin: 1rem 0 0;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+@mixin active($hovColor, $activeColor) {
+  input:hover {
+    border: 1px solid $hovColor;
+  }
+  &:focus-within {
+    label {
+      color: $activeColor;
+    }
+    input {
+      border: 1px solid $activeColor;
+    }
+  }
+}
+.input-group {
+  @include active(#333333, #2962ff);
+}
+.input-danger {
+  @include active(#333333, #d32f2f);
+}
+.input-group-disabled {
+  @include active(#e0e0e0, #e0e0e0);
+  input {
+    cursor: not-allowed;
+    border: 1px solid #e0e0e0;
+    background: #f2f2f2;
+  }
+}
+@mixin inputLabel($activeColor) {
+  input {
+    border: 1px solid $activeColor;
+  }
+  label {
+    color: $activeColor;
+  }
+}
+.input-group-active {
+  @include inputLabel(#2962ff);
+}
+.input-group-hover input {
+  border: 1px solid #333333;
+}
+.input-group-danger-active {
+  @include inputLabel(#d32f2f);
+}
+.input-help-text span,
+.input-help-text-danger span {
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+  color: #828282;
+}
+.input-help-text-danger{
+    @include active(#333333,#D32F2F);
+    &:focus-within {
+        span{
+            color:#d32f2f;
+        }
+    }
+}
+@media all and (min-width: 991px) {
+  h1 {
+    margin: 1rem 0.5rem;
+  }
+  main {
+    width: 70%;
+    margin: auto;
+  }
+  .input-group,
+  .input-help-text,
+  .input-help-text-danger {
+    margin: 1rem 2rem 1rem 0;
+  }
+}

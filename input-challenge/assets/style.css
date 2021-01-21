@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+main {
+  margin: 0.5rem;
+}
+
+h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #4f4f4f;
+  margin: 0 0 1rem 0.5rem;
+}
+
+label {
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 17px;
+  color: #333333;
+  margin: 0 0 0.3rem;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  overflow: visible;
+  margin: 0 auto 0 0;
+  padding: 1rem 0 1rem 0.5rem;
+  border: 1px solid #828282;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+}
+
+input :focus {
+  outline: none;
+}
+
+input ::-webkit-input-placeholder {
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #828282;
+}
+
+input :-ms-input-placeholder {
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #828282;
+}
+
+input ::-ms-input-placeholder {
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #828282;
+}
+
+input ::placeholder {
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #828282;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.title {
+  word-wrap: break-word;
+  font-family: Ubuntu Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: #333333;
+  margin: 0 0 1rem;
+}
+
+.title-muted {
+  font-family: Ubuntu Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: #828282;
+  margin: 0 0 1rem;
+}
+
+.input-group,
+.input-help-text,
+.input-help-text-danger {
+  margin: 1rem 0 0;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.input-group input:hover {
+  border: 1px solid #333333;
+}
+
+.input-group:focus-within label {
+  color: #2962ff;
+}
+
+.input-group:focus-within input {
+  border: 1px solid #2962ff;
+}
+
+.input-danger input:hover {
+  border: 1px solid #333333;
+}
+
+.input-danger:focus-within label {
+  color: #d32f2f;
+}
+
+.input-danger:focus-within input {
+  border: 1px solid #d32f2f;
+}
+
+.input-group-disabled input:hover {
+  border: 1px solid #e0e0e0;
+}
+
+.input-group-disabled:focus-within label {
+  color: #e0e0e0;
+}
+
+.input-group-disabled:focus-within input {
+  border: 1px solid #e0e0e0;
+}
+
+.input-group-disabled input {
+  cursor: not-allowed;
+  border: 1px solid #e0e0e0;
+  background: #f2f2f2;
+}
+
+.input-group-active input {
+  border: 1px solid #2962ff;
+}
+
+.input-group-active label {
+  color: #2962ff;
+}
+
+.input-group-hover input {
+  border: 1px solid #333333;
+}
+
+.input-group-danger-active input {
+  border: 1px solid #d32f2f;
+}
+
+.input-group-danger-active label {
+  color: #d32f2f;
+}
+
+.input-help-text span,
+.input-help-text-danger span {
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+  color: #828282;
+}
+
+.input-help-text-danger input:hover {
+  border: 1px solid #333333;
+}
+
+.input-help-text-danger:focus-within label {
+  color: #D32F2F;
+}
+
+.input-help-text-danger:focus-within input {
+  border: 1px solid #D32F2F;
+}
+
+.input-help-text-danger:focus-within span {
+  color: #d32f2f;
+}
+
+@media all and (min-width: 991px) {
+  h1 {
+    margin: 1rem 0.5rem;
+  }
+  main {
+    width: 70%;
+    margin: auto;
+  }
+  .input-group,
+  .input-help-text,
+  .input-help-text-danger {
+    margin: 1rem 2rem 1rem 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

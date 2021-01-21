@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Component Variants</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans+JP:wght@500&family=Poppins:wght@500&family=Ubuntu+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+        <h1>Inputs</h1>
+        <div class="d-flex">
+            <div class="input-group">
+                <div class="title">&lt;Input /></div>
+                <label for="input">label</label>
+                <input type="text" placeholder="placeholder" id="input">
+            </div>
+            <div class="input-group input-group-hover">
+                <div class="title">&:hover</div>
+                <label for="input">label</label>
+                <input type="text" placeholder="placeholder" id="input">
+            </div>
+            <div class="input-group input-group-active">
+                <div class="title">&:active</div>
+                <label for="input">label</label>
+                <input type="text" placeholder="placeholder" id="input">
+            </div>
+        </div>
+        <div class="d-flex">
+            <div class="input-group input-danger">
+                <div class="title">&lt;Input error /></div>
+                <label for="input">label</label>
+                <input type="text" placeholder="placeholder" id="input">
+            </div>
+            <div class="input-group input-danger input-group-hover">
+                <div class="title">&:hover</div>
+                <label for="input">label</label>
+                <input type="text" placeholder="placeholder" id="input">
+            </div>
+            <div class="input-group input-danger input-group-danger-active">
+                <div class="title">&:active</div>
+                <label for="input">label</label>
+                <input type="text" placeholder="placeholder" id="input">
+            </div>
+        </div>
+        <div class="d-flex">
+            <div class="input-group input-group-disabled">
+                <div class="title">&lt;Input disabled /></div>
+                <label for="input">label</label>
+                <input type="text" placeholder="placeholder" disabled id="input">
+            </div>
+        </div>
+        <div class="d-flex">
+            <div class="input-help-text">
+                <div class="title">&lt;Input helperText=”Some interesting text” /></div>
+                <label for="input">label</label>
+                <input type="text" placeholder="placeholder" id="input">
+                <span>Some interesting text</span>
+            </div>
+            <div class="input-help-text-danger">
+                <div class="title">&lt;Input helperText=”Some interesting text” danger/></div>
+                <label for="input">label</label>
+                <input type="text" placeholder="placeholder" id="input">
+                <span>Some interesting text</span>
+            </div>
+        </div>
+    </main>
+  </body>
+</html>
