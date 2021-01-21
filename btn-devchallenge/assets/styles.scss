@@ -12,6 +12,10 @@
   $danger-red: #d32f2f;
   $danger-red-dark: #9a0007;
 }
+a{
+  background-color: transparent;
+  text-decoration: none;
+}
 main {
   margin: 0.5rem;
 }
@@ -46,6 +50,12 @@ button {
   text-transform: capitalize;
   margin: 0.5rem auto 0.5rem 0;
   transition: all 0.3s;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 @mixin hovermixin($bgc) {
   &:hover {
