@@ -34,6 +34,12 @@ button {
     outline: none;
   }
 }
+.btn-sections{
+  height: 100%;
+  width: 98%;
+  display: block;
+  columns: 2;
+}
 @mixin btns($color, $bgc) {
   cursor: pointer;
   color: $color;
@@ -68,14 +74,12 @@ button {
     background-color: $bgc;
   }
 }
-.group {
-  margin: 1rem 0;
+.group-3{
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
-.d-flex {
-  margin: 1rem 0 0;
+.btn-grp {
+  margin: 1rem 0;
   display: flex;
   flex-direction: column;
 }
@@ -88,6 +92,7 @@ button {
   color: $color;
 }
 .title {
+  word-wrap: break-word;
   @include title(#333333);
 }
 .title-muted {
@@ -184,8 +189,8 @@ footer {
         margin: 1rem 0;
         justify-content: start;
     }
-    .d-flex{
-        margin: 0 auto 0 0;
+    .btn-grp{
+        margin: 1rem;
     }
     main{
         margin: 1rem 8rem;
