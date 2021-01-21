@@ -16,62 +16,123 @@
   </head>
   <body>
     <main>
-        <h1>Inputs</h1>
-        <div class="d-flex">
-            <div class="input-group">
-                <div class="title">&lt;Input /></div>
-                <label for="input">label</label>
-                <input type="text" placeholder="placeholder" id="input">
-            </div>
-            <div class="input-group input-group-hover">
-                <div class="title">&:hover</div>
-                <label for="input">label</label>
-                <input type="text" placeholder="placeholder" id="input">
-            </div>
-            <div class="input-group input-group-active">
-                <div class="title">&:active</div>
-                <label for="input">label</label>
-                <input type="text" placeholder="placeholder" id="input">
-            </div>
+      <h1>Inputs</h1>
+      <div class="d-flex">
+        <div class="input-group">
+          <div class="title">&lt;Input /></div>
+          <label for="input">label</label>
+          <input type="text" placeholder="placeholder" id="input" />
         </div>
-        <div class="d-flex">
-            <div class="input-group input-danger">
-                <div class="title">&lt;Input error /></div>
-                <label for="input">label</label>
-                <input type="text" placeholder="placeholder" id="input">
-            </div>
-            <div class="input-group input-danger input-group-hover">
-                <div class="title">&:hover</div>
-                <label for="input">label</label>
-                <input type="text" placeholder="placeholder" id="input">
-            </div>
-            <div class="input-group input-danger input-group-danger-active">
-                <div class="title">&:active</div>
-                <label for="input">label</label>
-                <input type="text" placeholder="placeholder" id="input">
-            </div>
+        <div class="input-group input-group-hover">
+          <div class="title">&:hover</div>
+          <label for="input">label</label>
+          <input type="text" placeholder="placeholder" id="input" />
         </div>
-        <div class="d-flex">
-            <div class="input-group input-group-disabled">
-                <div class="title">&lt;Input disabled /></div>
-                <label for="input">label</label>
-                <input type="text" placeholder="placeholder" disabled id="input">
-            </div>
+        <div class="input-group input-group-active">
+          <div class="title">&:active</div>
+          <label for="input">label</label>
+          <input type="text" placeholder="placeholder" id="input" />
         </div>
-        <div class="d-flex">
-            <div class="input-help-text">
-                <div class="title">&lt;Input helperText=”Some interesting text” /></div>
-                <label for="input">label</label>
-                <input type="text" placeholder="placeholder" id="input">
-                <span>Some interesting text</span>
-            </div>
-            <div class="input-help-text-danger">
-                <div class="title">&lt;Input helperText=”Some interesting text” danger/></div>
-                <label for="input">label</label>
-                <input type="text" placeholder="placeholder" id="input">
-                <span>Some interesting text</span>
-            </div>
+      </div>
+      <div class="d-flex">
+        <div class="input-group input-danger">
+          <div class="title">&lt;Input error /></div>
+          <label for="input">label</label>
+          <input type="text" placeholder="placeholder" id="input" />
         </div>
+        <div class="input-group input-danger input-group-hover">
+          <div class="title">&:hover</div>
+          <label for="input">label</label>
+          <input type="text" placeholder="placeholder" id="input" />
+        </div>
+        <div class="input-group input-danger input-group-danger-active">
+          <div class="title">&:active</div>
+          <label for="input">label</label>
+          <input type="text" placeholder="placeholder" id="input" />
+        </div>
+      </div>
+      <div class="d-flex">
+        <div class="input-group input-group-disabled">
+          <div class="title">&lt;Input disabled /></div>
+          <label for="input">label</label>
+          <input type="text" placeholder="placeholder" disabled id="input" />
+        </div>
+      </div>
+      <div class="d-flex">
+        <div class="input-help-text">
+          <div class="title">
+            &lt;Input helperText=”Some interesting text” />
+          </div>
+          <label for="input">label</label>
+          <input type="text" placeholder="placeholder" id="input" />
+          <span>Some interesting text</span>
+        </div>
+        <div class="input-help-text-danger">
+          <div class="title">
+            &lt;Input helperText=”Some interesting text” danger/>
+          </div>
+          <label for="input">label</label>
+          <input type="text" placeholder="placeholder" id="input" />
+          <span>Some interesting text</span>
+        </div>
+      </div>
+      <div class="d-flex">
+        <div class="input-group-addon">
+          <div class="title">&lt;Input startIcon /></div>
+          <label for="input">label</label>
+          <div class="input-addon">
+            <span class="material-icons"> call </span>
+            <input type="text" placeholder="placeholder" id="input" />
+          </div>
+        </div>
+        <div class="input-group-addon">
+          <div class="title">&lt;Input endIcon /></div>
+          <label for="input">label</label>
+          <div class="input-addon-l">
+            <input type="text" placeholder="placeholder" id="input" />
+            <span class="material-icons"> lock </span>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex">
+        <div class="input-group">
+          <div class="title">&lt;Input value="text" /></div>
+          <label for="input">label</label>
+          <input
+            type="text"
+            value="text"
+            placeholder="placeholder"
+            id="input"
+          />
+        </div>
+      </div>
+      <div class="d-flex">
+        <div class="input-group-sm">
+          <div class="title">&lt;Input size="sm" /></div>
+          <label for="input">label</label>
+          <input type="text" placeholder="placeholder" id="input" />
+        </div>
+        <div class="input-group-md">
+          <div class="title">&lt;Input size="md" /></div>
+          <label for="input">label</label>
+          <input type="text" placeholder="placeholder" id="input" />
+        </div>
+      </div>
+      <div class="d-flex">
+          <div class="input-group-lg">
+            <div class="title">&lt;Input fullwidth /></div>
+            <label for="input">label</label>
+            <input type="text" placeholder="placeholder" value="text" id="input" />
+          </div>
+      </div>
+      <div class="d-flex">
+        <div class="input-group">
+            <div class="title">&lt;textarea rows="5" /></div>
+            <label for="input">label</label>
+            <textarea name="" placeholder="placeholder" id="" cols="10" rows="5"></textarea>
+          </div>
+      </div>
     </main>
+    <footer><a href="https://portfolio.devchallenges.io/shubham-ghuge">shubham ghuge @devChallenges.io</a></footer>
   </body>
 </html>

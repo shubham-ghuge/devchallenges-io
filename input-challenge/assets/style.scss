@@ -20,6 +20,22 @@ h1 {
   margin: 0 0 1rem 0.5rem;
 }
 
+footer {
+  margin: 1rem 0;
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: #333333;
+    font-family: montserrat;
+  }
+}
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  outline: none;
+  border: none;
+}
 label {
   font-family: Noto Sans JP;
   font-style: normal;
@@ -29,19 +45,45 @@ label {
   color: #333333;
   margin: 0 0 0.3rem;
 }
-input {
+textarea {
   background-color: transparent;
   border: none;
   overflow: visible;
-  margin: 0 auto 0 0;
   padding: 1rem 0 1rem 0.5rem;
   border: 1px solid #828282;
   box-sizing: border-box;
   border-radius: 8px;
+  display: inline-block;
+  text-transform: capitalize;
+  resize: none;
+  font-family: Noto Sans JP;
   & :focus {
     outline: none;
   }
   & ::placeholder {
+    text-transform: capitalize;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 6px;
+    line-height: 20px;
+    color: #828282;
+  }
+}
+input {
+  background-color: transparent;
+  border: none;
+  overflow: visible;
+  padding: 1rem 0 1rem 0.5rem;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: inline-block;
+  text-transform: capitalize;
+  & :focus {
+    outline: none;
+  }
+  & ::placeholder {
+    text-transform: capitalize;
     font-family: Noto Sans JP;
     font-style: normal;
     font-weight: 500;
@@ -71,12 +113,24 @@ input {
   @include title(#828282);
 }
 .input-group,
+.input-group-sm,
+.input-group-md,
 .input-help-text,
-.input-help-text-danger {
+.input-help-text-danger,
+.input-group-addon,
+.input-group-lg {
   margin: 1rem 0 0;
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+.input-group {
+  &:focus-within {
+    textarea {
+      border: 1px solid #2962ff;
+    }
+  }
 }
 @mixin active($hovColor, $activeColor) {
   input:hover {
@@ -91,7 +145,10 @@ input {
     }
   }
 }
-.input-group {
+.input-group,
+.input-group-sm,
+.input-group-md,
+.input-group-lg {
   @include active(#333333, #2962ff);
 }
 .input-danger {
@@ -131,13 +188,77 @@ input {
   line-height: 14px;
   color: #828282;
 }
-.input-help-text-danger{
-    @include active(#333333,#D32F2F);
-    &:focus-within {
-        span{
-            color:#d32f2f;
-        }
+.input-help-text-danger {
+  @include active(#333333, #d32f2f);
+  &:focus-within {
+    span {
+      color: #d32f2f;
     }
+  }
+}
+.input-group-addon {
+  .input-addon:hover {
+    border: 1px solid #333333;
+  }
+  &:focus-within {
+    label,
+    span {
+      color: #2962ff;
+    }
+    .input-addon,
+    .input-addon-l {
+      border: 1px solid #2962ff;
+    }
+  }
+}
+.input-addon,
+.input-addon-l {
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-items: space-between;
+  span {
+    vertical-align: middle;
+    margin: 0 0.5rem;
+    color: #828282;
+  }
+  input {
+    border: none;
+    padding: 1rem 0 1rem 0rem;
+  }
+}
+.input-addon {
+  input {
+    border: none;
+    padding: 1rem 0 1rem 0rem;
+  }
+}
+.input-addon-l {
+  input {
+    border: none;
+    padding: 1rem 0 1rem 0.5rem;
+  }
+  span {
+    margin: 0 0.5rem 0 auto;
+  }
+}
+.input-group-sm {
+  input {
+    padding: 0.5rem;
+  }
+}
+@media all and (min-width: 600px) {
+  .input-group,
+  .input-help-text,
+  .input-help-text-danger,
+  .input-group-addon,
+  .input-group-sm,
+  .input-group-md {
+    width: auto;
+    padding: 0.5rem 0.2rem;
+  }
 }
 @media all and (min-width: 991px) {
   h1 {
@@ -149,7 +270,10 @@ input {
   }
   .input-group,
   .input-help-text,
-  .input-help-text-danger {
+  .input-help-text-danger,
+  .input-group-addon,
+  .input-group-sm,
+  .input-group-md {
     margin: 1rem 2rem 1rem 0;
   }
 }

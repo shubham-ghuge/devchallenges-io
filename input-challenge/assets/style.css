@@ -22,6 +22,25 @@ h1 {
   margin: 0 0 1rem 0.5rem;
 }
 
+footer {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333333;
+  font-family: montserrat;
+}
+
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  outline: none;
+  border: none;
+}
+
 label {
   font-family: Noto Sans JP;
   font-style: normal;
@@ -32,16 +51,72 @@ label {
   margin: 0 0 0.3rem;
 }
 
-input {
+textarea {
   background-color: transparent;
   border: none;
   overflow: visible;
-  margin: 0 auto 0 0;
   padding: 1rem 0 1rem 0.5rem;
   border: 1px solid #828282;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 8px;
+  display: inline-block;
+  text-transform: capitalize;
+  resize: none;
+  font-family: Noto Sans JP;
+}
+
+textarea :focus {
+  outline: none;
+}
+
+textarea ::-webkit-input-placeholder {
+  text-transform: capitalize;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 6px;
+  line-height: 20px;
+  color: #828282;
+}
+
+textarea :-ms-input-placeholder {
+  text-transform: capitalize;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 6px;
+  line-height: 20px;
+  color: #828282;
+}
+
+textarea ::-ms-input-placeholder {
+  text-transform: capitalize;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 6px;
+  line-height: 20px;
+  color: #828282;
+}
+
+textarea ::placeholder {
+  text-transform: capitalize;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 6px;
+  line-height: 20px;
+  color: #828282;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  overflow: visible;
+  padding: 1rem 0 1rem 0.5rem;
+  border: 1px solid #828282;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  display: inline-block;
+  text-transform: capitalize;
 }
 
 input :focus {
@@ -49,6 +124,7 @@ input :focus {
 }
 
 input ::-webkit-input-placeholder {
+  text-transform: capitalize;
   font-family: Noto Sans JP;
   font-style: normal;
   font-weight: 500;
@@ -58,6 +134,7 @@ input ::-webkit-input-placeholder {
 }
 
 input :-ms-input-placeholder {
+  text-transform: capitalize;
   font-family: Noto Sans JP;
   font-style: normal;
   font-weight: 500;
@@ -67,6 +144,7 @@ input :-ms-input-placeholder {
 }
 
 input ::-ms-input-placeholder {
+  text-transform: capitalize;
   font-family: Noto Sans JP;
   font-style: normal;
   font-weight: 500;
@@ -76,6 +154,7 @@ input ::-ms-input-placeholder {
 }
 
 input ::placeholder {
+  text-transform: capitalize;
   font-family: Noto Sans JP;
   font-style: normal;
   font-weight: 500;
@@ -114,8 +193,12 @@ input ::placeholder {
 }
 
 .input-group,
+.input-group-sm,
+.input-group-md,
 .input-help-text,
-.input-help-text-danger {
+.input-help-text-danger,
+.input-group-addon,
+.input-group-lg {
   margin: 1rem 0 0;
   padding: 0.5rem;
   display: -webkit-box;
@@ -125,17 +208,31 @@ input ::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
 }
 
-.input-group input:hover {
+.input-group:focus-within textarea {
+  border: 1px solid #2962ff;
+}
+
+.input-group input:hover,
+.input-group-sm input:hover,
+.input-group-md input:hover,
+.input-group-lg input:hover {
   border: 1px solid #333333;
 }
 
-.input-group:focus-within label {
+.input-group:focus-within label,
+.input-group-sm:focus-within label,
+.input-group-md:focus-within label,
+.input-group-lg:focus-within label {
   color: #2962ff;
 }
 
-.input-group:focus-within input {
+.input-group:focus-within input,
+.input-group-sm:focus-within input,
+.input-group-md:focus-within input,
+.input-group-lg:focus-within input {
   border: 1px solid #2962ff;
 }
 
@@ -204,15 +301,87 @@ input ::placeholder {
 }
 
 .input-help-text-danger:focus-within label {
-  color: #D32F2F;
+  color: #d32f2f;
 }
 
 .input-help-text-danger:focus-within input {
-  border: 1px solid #D32F2F;
+  border: 1px solid #d32f2f;
 }
 
 .input-help-text-danger:focus-within span {
   color: #d32f2f;
+}
+
+.input-group-addon .input-addon:hover {
+  border: 1px solid #333333;
+}
+
+.input-group-addon:focus-within label,
+.input-group-addon:focus-within span {
+  color: #2962ff;
+}
+
+.input-group-addon:focus-within .input-addon,
+.input-group-addon:focus-within .input-addon-l {
+  border: 1px solid #2962ff;
+}
+
+.input-addon,
+.input-addon-l {
+  border: 1px solid #828282;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: space-between;
+}
+
+.input-addon span,
+.input-addon-l span {
+  vertical-align: middle;
+  margin: 0 0.5rem;
+  color: #828282;
+}
+
+.input-addon input,
+.input-addon-l input {
+  border: none;
+  padding: 1rem 0 1rem 0rem;
+}
+
+.input-addon input {
+  border: none;
+  padding: 1rem 0 1rem 0rem;
+}
+
+.input-addon-l input {
+  border: none;
+  padding: 1rem 0 1rem 0.5rem;
+}
+
+.input-addon-l span {
+  margin: 0 0.5rem 0 auto;
+}
+
+.input-group-sm input {
+  padding: 0.5rem;
+}
+
+@media all and (min-width: 600px) {
+  .input-group,
+  .input-help-text,
+  .input-help-text-danger,
+  .input-group-addon,
+  .input-group-sm,
+  .input-group-md {
+    width: auto;
+    padding: 0.5rem 0.2rem;
+  }
 }
 
 @media all and (min-width: 991px) {
@@ -225,7 +394,10 @@ input ::placeholder {
   }
   .input-group,
   .input-help-text,
-  .input-help-text-danger {
+  .input-help-text-danger,
+  .input-group-addon,
+  .input-group-sm,
+  .input-group-md {
     margin: 1rem 2rem 1rem 0;
   }
 }
